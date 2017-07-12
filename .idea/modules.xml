@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sm-workflow.iml" filepath="$PROJECT_DIR$/sm-workflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-workflow-application/sm-workflow-application.iml" filepath="$PROJECT_DIR$/sm-workflow-application/sm-workflow-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-workflow-domain/sm-workflow-domain.iml" filepath="$PROJECT_DIR$/sm-workflow-domain/sm-workflow-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-workflow-infra/sm-workflow-infra.iml" filepath="$PROJECT_DIR$/sm-workflow-infra/sm-workflow-infra.iml" />
+    </modules>
+  </component>
+</project>
