@@ -1,15 +1,19 @@
 package ch.globaz.smworkflow.application;
 
-import ch.globaz.smworkflow.domain.repository.WorkFlowRepository;
-import ch.globaz.smworkflow.statemachine.Events;
-import ch.globaz.smworkflow.statemachine.States;
+import ch.globaz.smworkflow.application.rest.dto.SaisirDemandeDTO;
+import ch.globaz.smworkflow.application.rest.dto.WorkFlowDTO;
+import ch.globaz.smworkflow.domain.model.Events;
+import ch.globaz.smworkflow.domain.model.States;
+import ch.globaz.smworkflow.domain.model.Workflow;
+
+import ch.globaz.smworkflow.domain.spi.WorkFlowService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.statemachine.StateMachine;
-import org.springframework.statemachine.config.StateMachineFactory;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by sce on 11.07.2017.
@@ -17,59 +21,68 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-    @Autowired
-    StateMachineFactory<States, Events> factory;
+
 
     @Autowired
-    WorkFlowRepository repo;
+    WorkFlowService workFlowService;
 
-    @RequestMapping(value = {"/process/init"}, method = RequestMethod.GET)
-    public void initProcess(){
-        StateMachine<States,Events> workflow = factory.getStateMachine();
+    @RequestMapping(value = {"/process/init"}, method = RequestMethod.POST)
+    public ResponseEntity<WorkFlowDTO> initProcess(@RequestBody final WorkFlowDTO dto){
+        //StateMachineWorkflow<States,Events> workflow = StateMachineWorkflow.with(factory.getStateMachine());
+
+        Workflow<States,Events> workflow = workFlowService.getNewInstance(dto.getUserName());
         workflow.start();
-        repo.create(workflow);
-        System.out.println("Workflow created: " + workflow.getUuid() +", initialState: " + workflow.getInitialState().getId() +", currentState:"  + workflow.getState());
+        workFlowService.create(workflow);
+        dto.setUuid(workflow.getUuid());
+        return new ResponseEntity<WorkFlowDTO>(dto, HttpStatus.CREATED);
     }
 
     @RequestMapping(value = {"/process"}, method = RequestMethod.GET)
-    public void saisirDemande(){
+    public ResponseEntity<List<WorkFlowDTO>> saisirDemande(){
 
-        repo.getWorflows().forEach((e,a)->{
-            System.out.println(e +","+a);
+        List<WorkFlowDTO> workflows = new ArrayList<>();
+
+
+        workFlowService.getWorkFlows().forEach(w->{
+            workflows.add(WorkFlowDTO.from(w));
         });
+
+        return new ResponseEntity<List<WorkFlowDTO>>(workflows,HttpStatus.OK);
 
     }
 
-    @RequestMapping(value = {"/process/{processId}/saisirDemande"}, method = RequestMethod.GET)
-    public void saisirDemande(@PathVariable("processId") String processId){
 
+    @RequestMapping(value = {"/process/saisirDemande"}, method = RequestMethod.POST)
+    public void saisirDemande(@RequestBody final SaisirDemandeDTO dto){
 
+        System.out.println(dto.getProcessId());
 
-        StateMachine<States,Events> workflow = repo.getByUUID(processId);
+        Workflow<States,Events> workflow = workFlowService.getByUUID(dto.getProcessId());
 
         if(null != workflow){
-            boolean trans = workflow.sendEvent(Events.DEMANDE_INITIE);
-            System.out.println("Workflow transition["+trans+"]: " + workflow.getUuid() +", initialState: " + workflow.getInitialState().getId() +", currentState:"  + workflow.getState());
+            //workflow.
+            boolean trans = workflow.sendEvent(Events.DEMANDE_SAISIE);
+            System.out.println("Workflow transition["+trans+"]: " + workflow.getUuid() +", initialState: " + workflow.getInitialState() +", currentState:"  + workflow.getState());
 
         }
 
     }
-
+/*
     @RequestMapping(value = {"/process/{processId}/initierDemande"}, method = RequestMethod.GET)
     public void initierDemande(@PathVariable("processId") String processId){
 
 
 
-        StateMachine<States,Events> workflow = repo.getByUUID(processId);
+        Workflow<States,Events> workflow = repo.getByUUID(processId);
 
         if(null != workflow){
             boolean trans = workflow.sendEvent(Events.DEMANDE_INITIE);
-            System.out.println("Workflow transition["+trans+"]: " + workflow.getUuid() +", initialState: " + workflow.getInitialState().getId() +", currentState:"  + workflow.getState());
+            System.out.println("Workflow transition["+trans+"]: " + workflow.getUuid() +", initialState: " + workflow.getInitialState() +", currentState:"  + workflow.getState());
 
         }
 
     }
-
+*/
 
 
 

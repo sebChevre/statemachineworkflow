@@ -1,0 +1,5 @@
+ch\globaz\smworkflow\sminfra\statemachine\service\StateMachineService.class
+ch\globaz\smworkflow\sminfra\statemachine\SMListener.class
+ch\globaz\smworkflow\sminfra\statemachine\SMBuilder.class
+ch\globaz\smworkflow\sminfra\repository\entity\StateMachineWorkflow.class
+ch\globaz\smworkflow\sminfra\repository\WorfFlowInMemoryRepository.class

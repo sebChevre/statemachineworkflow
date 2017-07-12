@@ -1,0 +1,5 @@
+ch\globaz\smworkflow\application\Controller.class
+ch\globaz\smworkflow\application\rest\dto\WorkFlowDTO.class
+ch\globaz\smworkflow\application\Application.class
+ch\globaz\smworkflow\application\statemachine\Tache.class
+ch\globaz\smworkflow\application\statemachine\WorkFlowFactory.class

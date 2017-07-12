@@ -1,0 +1,5 @@
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\repository\WorkFlowRepository.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\model\Workflow.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\model\Events.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\model\States.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\spi\WorkFlowService.java

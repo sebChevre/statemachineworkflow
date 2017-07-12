@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/sm-workflow-application/sm-workflow-application.iml" filepath="$PROJECT_DIR$/sm-workflow-application/sm-workflow-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-workflow-domain/sm-workflow-domain.iml" filepath="$PROJECT_DIR$/sm-workflow-domain/sm-workflow-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/sm-workflow-infra/sm-workflow-infra.iml" filepath="$PROJECT_DIR$/sm-workflow-infra/sm-workflow-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smworflowsmtest/smworflowsmtest.iml" filepath="$PROJECT_DIR$/smworflowsmtest/smworflowsmtest.iml" />
     </modules>
   </component>
 </project>

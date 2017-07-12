@@ -5,6 +5,7 @@ import ch.globaz.smworkflow.domain.model.Events;
 import ch.globaz.smworkflow.domain.model.States;
 import ch.globaz.smworkflow.domain.model.Workflow;
 import org.springframework.statemachine.StateMachine;
+import org.springframework.stereotype.Repository;
 
 import java.util.Map;
 
@@ -14,10 +15,10 @@ import java.util.Map;
 
 public interface WorkFlowRepository {
 
-    public void create(Workflow stateMachine);
+    public Workflow<States,Events> create(Workflow stateMachine);
 
-    public Map<String, StateMachine<States, Events>> getWorflows();
+    public Map<String, Workflow<States, Events>> getWorflows();
 
-    public StateMachine<States,Events> getByUUID(String uuid);
+    public Workflow<States,Events> getByUUID(String uuid);
 
 }

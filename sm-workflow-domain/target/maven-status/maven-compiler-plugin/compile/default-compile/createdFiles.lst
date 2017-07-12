@@ -1,0 +1,5 @@
+ch\globaz\smworkflow\domain\model\Events.class
+ch\globaz\smworkflow\domain\model\States.class
+ch\globaz\smworkflow\domain\model\Workflow.class
+ch\globaz\smworkflow\domain\repository\WorkFlowRepository.class
+ch\globaz\smworkflow\domain\spi\WorkFlowService.class

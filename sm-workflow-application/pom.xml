@@ -9,6 +9,26 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+					<skip>false</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
 	<groupId>ch.globaz</groupId>
 	<artifactId>sm-workflow-application</artifactId>
 	<version>1.0-SNAPSHOT</version>
@@ -23,7 +43,12 @@
 			<artifactId>sm-workflow-domain</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>ch.globaz</groupId>
+            <artifactId>sm-workflow-infra</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
