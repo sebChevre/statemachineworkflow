@@ -39,7 +39,7 @@
         <module>sm-workflow-domain</module>
         <module>sm-workflow-infra</module>
         <module>sm-workflow-application</module>
-        <module>smworflowsmtest</module>
+        <module>sm-workflow-test</module>
     </modules>
 
     <parent>
