@@ -1,5 +1,9 @@
-D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\WorfFlowInMemoryRepository.java
-D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\statemachine\service\StateMachineService.java
-D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\statemachine\SMBuilder.java
-D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\statemachine\SMListener.java
-D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\entity\StateMachineWorkflow.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\entity\WorkFlowTache.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\DemandeJpaRepository.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\WorkFlowInMemoryRepository.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\DemandeInMemoryRepository.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\statemachine\StateMachineTransitionListener.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\statemachine\StateMachineWorkFlowProvider.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\entity\DemandeAffiliation.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\repository\entity\StateMachineWorkFlow.java
+D:\workspaces\statemachineworkflow\sm-workflow-infra\src\main\java\ch\globaz\smworkflow\sminfra\statemachine\StateMachineListener.java

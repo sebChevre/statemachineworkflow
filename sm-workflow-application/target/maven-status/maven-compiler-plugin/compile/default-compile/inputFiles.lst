@@ -1,5 +1,7 @@
 D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\Controller.java
+D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\rest\dto\TacheDTO.java
 D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\rest\dto\WorkFlowDTO.java
+D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\rest\dto\DemandeDTO.java
 D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\Application.java
-D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\statemachine\WorkFlowFactory.java
-D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\statemachine\Tache.java
+D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\workflow\service\WorkFlowSpringService.java
+D:\workspaces\statemachineworkflow\sm-workflow-application\src\main\java\ch\globaz\smworkflow\application\demande\DemandeAffiliationService.java

@@ -1,5 +1,10 @@
-ch\globaz\smworkflow\domain\model\Events.class
-ch\globaz\smworkflow\domain\model\States.class
-ch\globaz\smworkflow\domain\model\Workflow.class
-ch\globaz\smworkflow\domain\repository\WorkFlowRepository.class
-ch\globaz\smworkflow\domain\spi\WorkFlowService.class
+ch\globaz\smworkflow\domain\core\User.class
+ch\globaz\smworkflow\domain\workflow\api\entity\States.class
+ch\globaz\smworkflow\domain\workflow\api\entity\ProcessusMetier.class
+ch\globaz\smworkflow\domain\workflow\api\entity\Tache.class
+ch\globaz\smworkflow\domain\workflow\service\WorkFlowService.class
+ch\globaz\smworkflow\domain\workflow\spi\WorkFlowRepository.class
+ch\globaz\smworkflow\domain\workflow\api\entity\Events.class
+ch\globaz\smworkflow\domain\workflow\api\entity\WorkFlow.class
+ch\globaz\smworkflow\domain\workflow\spi\WorkFlowProvider.class
+ch\globaz\smworkflow\domain\repository\DemandeRepository.class

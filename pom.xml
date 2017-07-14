@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ch.globaz</groupId>
-    <artifactId>sm-workflow</artifactId>
+    <artifactId>sm-workFlow</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -36,10 +36,10 @@
         </plugins>
     </build>
     <modules>
-        <module>sm-workflow-domain</module>
-        <module>sm-workflow-infra</module>
-        <module>sm-workflow-application</module>
-        <module>sm-workflow-test</module>
+        <module>sm-workFlow-domain</module>
+        <module>sm-workFlow-infra</module>
+        <module>sm-workFlow-application</module>
+        <module>sm-workFlow-test</module>
     </modules>
 
     <parent>

@@ -44,13 +44,13 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-sm-workflow-application/src/main/java/ch/globaz/smworkflow/application/infrastructure/
-sm-workflow-application/src/main/resources/
-sm-workflow-application/src/test/
-sm-workflow-domain/src/main/java/ch/globaz/smworkflow/domain/api/
-sm-workflow-domain/src/main/resources/
-sm-workflow-domain/src/test/
-sm-workflow-infra/src/main/resources/
-sm-workflow-infra/src/test/
+sm-workFlow-application/src/main/java/ch/globaz/smworkflow/application/infrastructure/
+sm-workFlow-application/src/main/resources/
+sm-workFlow-application/src/test/
+sm-workFlow-domain/src/main/java/ch/globaz/smworkflow/domain/api/
+sm-workFlow-domain/src/main/resources/
+sm-workFlow-domain/src/test/
+sm-workFlow-infra/src/main/resources/
+sm-workFlow-infra/src/test/
 target/
 

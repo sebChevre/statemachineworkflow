@@ -1,5 +1,12 @@
-D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\repository\WorkFlowRepository.java
-D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\model\Workflow.java
-D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\model\Events.java
-D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\model\States.java
-D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\spi\WorkFlowService.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\demande\api\entity\Demande.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\repository\DemandeRepository.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\api\entity\WorkFlow.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\api\entity\Tache.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\demande\service\DemandeService.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\core\User.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\api\entity\States.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\service\WorkFlowService.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\spi\WorkFlowProvider.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\api\entity\ProcessusMetier.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\api\entity\Events.java
+D:\workspaces\statemachineworkflow\sm-workflow-domain\src\main\java\ch\globaz\smworkflow\domain\workflow\spi\WorkFlowRepository.java

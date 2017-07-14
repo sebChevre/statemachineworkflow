@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<artifactId>sm-workflow</artifactId>
+		<artifactId>sm-workFlow</artifactId>
 		<groupId>ch.globaz</groupId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
@@ -30,22 +30,22 @@
 	</build>
 
 	<groupId>ch.globaz</groupId>
-	<artifactId>sm-workflow-application</artifactId>
+	<artifactId>sm-workFlow-application</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<dependencies>
 		<dependency>
 			<groupId>ch.globaz</groupId>
-			<artifactId>sm-workflow-domain</artifactId>
+			<artifactId>sm-workFlow-domain</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.globaz</groupId>
-			<artifactId>sm-workflow-domain</artifactId>
+			<artifactId>sm-workFlow-domain</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
         <dependency>
             <groupId>ch.globaz</groupId>
-            <artifactId>sm-workflow-infra</artifactId>
+            <artifactId>sm-workFlow-infra</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

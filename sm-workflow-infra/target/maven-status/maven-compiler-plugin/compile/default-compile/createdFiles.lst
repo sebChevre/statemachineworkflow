@@ -1,5 +1,8 @@
-ch\globaz\smworkflow\sminfra\statemachine\service\StateMachineService.class
-ch\globaz\smworkflow\sminfra\statemachine\SMListener.class
-ch\globaz\smworkflow\sminfra\statemachine\SMBuilder.class
-ch\globaz\smworkflow\sminfra\repository\entity\StateMachineWorkflow.class
-ch\globaz\smworkflow\sminfra\repository\WorfFlowInMemoryRepository.class
+ch\globaz\smworkflow\sminfra\repository\entity\WorkFlowTache.class
+ch\globaz\smworkflow\sminfra\statemachine\StateMachineListener.class
+ch\globaz\smworkflow\sminfra\repository\DemandeJpaRepository.class
+ch\globaz\smworkflow\sminfra\statemachine\StateMachineWorkFlowProvider.class
+ch\globaz\smworkflow\sminfra\repository\entity\StateMachineWorkFlow.class
+ch\globaz\smworkflow\sminfra\statemachine\StateMachineTransitionListener.class
+ch\globaz\smworkflow\sminfra\repository\WorkFlowInMemoryRepository.class
+ch\globaz\smworkflow\sminfra\repository\DemandeInMemoryRepository.class
